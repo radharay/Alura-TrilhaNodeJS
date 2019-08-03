@@ -1,0 +1,52 @@
+#Aula 04
+
+~Adicionando um novo paciente:
+HTML = criar o formulário
+JS = Escutando eventos : ao clicar no botão adicionar
+Por exemplo: ao clicar no meu titulo, eu quero  que apareça uma mensagem
+Buscar o elemento(titulo) e chamar a função de js addEventListerner() 
+
+titulo.addEventListerner('click', mostrarMsn);
+
+//criar uma função e passar no meu addEventListerner a minha funcão
+
+function mostrarMsn(){
+    console.log('Eu fui clicado.');
+}
+
+função anonima:
+Posso passar uma função dentro do meu evento, que só funciona dentro desse evento.
+
+titulo.addEventListerner('click', function(){
+    console.log('Eu fui clicado.');
+});
+
+~ No nosso contexto, ao clicar em adicionar eu add o paciente na tabela.
+tenho que selecionar o botão (id) e vou add o addEventListerner e vou passar uma função
+Mas ao recarregar a página ele não salva o nosso evento. 
+Nesse caso precisamos de outra função: event.preventdefault();
+e passa o (event) como parametro dentro da função do evento addEventListerner;
+//previne o comportamento default do objeto, ou seja cancela o comportamento que os elementos geralmente tem na página;
+//event.preventDefault() impede que o evento padrão ocorra; nesse caso de recarregar a página;
+
+04.06 Adicionando pacientes na tabela
+01 - capturar os dados do formulário
+js, ir na função pegar os dados hmtl - js 
+criar a var for e selecionar o form (id) e agora temos acesso aos seus input, por exemplo name.altura
+form.altura
+Mas o que preciso é do value(valor) desse campo;
+Para acessar os value de cada compo do form: form.altura.value
+
+Agora temos os dados do html no nosso js, mas agora temos que devolver esses dados para a tabela no hmtl
+Js - HTML
+
+criar um elemento elemento html dentro do nosso js função creatElement e criamos uma TR e as 05 td;
+
+Precisamos passar os td's dentro da tr, para isso precisamos da função:
+appendChild, vamos add as filhas(td) dentro da mãe(tr)
+
+
+Agora vamos colocar na tabela, tbody appendChild
+
+
+
