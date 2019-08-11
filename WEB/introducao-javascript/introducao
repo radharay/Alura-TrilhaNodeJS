@@ -49,4 +49,19 @@ appendChild, vamos add as filhas(td) dentro da mãe(tr)
 Agora vamos colocar na tabela, tbody appendChild
 
 
+Aula 05
+
+> Quebrando o código em arquivos diferentes
+
+> Criando funções:
+
+Separar o nosso código por funções.
+
+Criando a função calculaImc
+
+Uma boa prática de programação é extrairmos ações que queremos reutilizar 
+- como o cálculo do IMC - para funções externas. 
+
+
+
 
