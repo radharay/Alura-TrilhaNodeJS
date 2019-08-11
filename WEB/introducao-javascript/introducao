@@ -62,6 +62,9 @@ Criando a função calculaImc
 Uma boa prática de programação é extrairmos ações que queremos reutilizar 
 - como o cálculo do IMC - para funções externas. 
 
+> Criando um objeto paciente
+
+
 
 
 

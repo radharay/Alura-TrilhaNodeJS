@@ -1,14 +1,11 @@
 var titulo = document.querySelector(".titulo");
-titulo.textContent = "Manas da Nutrição";
-
-
+titulo.textContent = "Manas Da Nutrição";
 
 var pacientes = document.querySelectorAll(".paciente");
 
 for (var i = 0; i < pacientes.length; i++) {
-    var paciente = pacientes[i];
-    //console.log(paciente);
 
+    var paciente = pacientes[i];
 
     var tdPeso = paciente.querySelector(".info-peso");
     var peso = tdPeso.textContent;
@@ -36,16 +33,14 @@ for (var i = 0; i < pacientes.length; i++) {
     }
 
     if (pesoEhValido && alturaEhValida) {
-        var imc = calculaImc(peso,altura);
+        var imc = calculaImc(peso, altura);
         tdImc.textContent = imc;
     }
-
-
 }
 
-function calculaImc(){
+function calculaImc(peso, altura) {
     var imc = 0;
-
     imc = peso / (altura * altura);
+
     return imc.toFixed(2);
 }
